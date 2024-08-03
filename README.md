@@ -36,11 +36,11 @@ The script currently understands and processes the following command line
 arguments and options:
 
 - **-u** -> Stands for user. The name of a user whose profile will be parsed by 
-- the script. Providing this argument scripts the user prompt at the beginning 
-- of the script.
+the script. Providing this argument scripts the user prompt at the beginning 
+of the script.
 - **--file-output** -> Option to specify whether to output the links to pages 
-- with broken embeds in a file. The default is output of the links to the 
-- terminal.
+with broken embeds in a file. The default is output of the links to the 
+terminal.
 
 ## Installation
 All script requirements are listed in the included requirements.txt file in 
