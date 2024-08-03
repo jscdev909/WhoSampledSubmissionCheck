@@ -1,6 +1,6 @@
 # WhoSampled Submission Checker
 
-A simple script to validate submission pages for user profiles on the website WhoSampled.
+A simple script to validate sample submission pages for user profiles on the website WhoSampled.
 
 ## Background
 The website WhoSampled is a user-submitted database of music samples. Each public user profile page on WhoSampled can contain 0 or more pages of samples submitted by this user.
