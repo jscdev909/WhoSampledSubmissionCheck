@@ -1,3 +1,5 @@
+# WhoSampled Submission Checker
+
 A simple script to validate submission pages for user profiles on the website WhoSampled.
 
 ## Background
