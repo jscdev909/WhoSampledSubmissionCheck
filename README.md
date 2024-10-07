@@ -6,12 +6,11 @@ on the website [WhoSampled](https://www.whosampled.com/).
 ## Background
 The website WhoSampled is a user-submitted database of music samples. Each 
 public user profile page on WhoSampled can contain 0 or more pages of samples 
-submitted by this user. Each individual page usually contains two YouTube 
+submitted by a user. Each individual page usually contains two YouTube 
 videos: one for the song that uses the sample and another for the originating 
-song where the sample came from. However, it is also
-possible for these videos to either be broken (the video got deleted or 
-made private) or to be replaced with other widgets from music services 
-(SoundCloud, Bandcamp, Spotify, etc.).
+song where the sample came from. However, it is also possible for these videos 
+to either be broken (the video got deleted or made private) or to be replaced 
+with other widgets from music services (SoundCloud, Bandcamp, Spotify, etc.).
 
 ## About
 This program scans user profile pages on WhoSampled for sample submission 
@@ -21,25 +20,24 @@ broken embeds:
 
 - At least one of the YouTube videos embeds on the page is missing
 - At least one YouTube embed has been replaced with a widget from another audio 
-- streaming service (described above)
+streaming service (described above)
 
 The second condition might need to be accounted for separately in a future 
 release of this script as it doesn't necessarily mean the page has broken 
-embeds. Just because the embeds aren't
-from YouTube doesn't mean they won't work, even if the timestamps above the 
-non-existent video remain broken.
+embeds. Just because the embeds aren't from YouTube doesn't mean they won't 
+work.
 
 The output from the program is a list of WhoSampled submission pages which have 
-broken embeds.
+broken embeds. This can either be written to standard output or a file.
 
 The script currently understands and processes the following command line 
 arguments and options:
 
-- **-u** -> Stands for user. The name of a user whose profile will be parsed by 
-the script. Providing this argument scripts the user prompt at the beginning 
-of the script.
+- **-u** -> Stands for user. The name of a valid WhoSampled user whose profile
+will be parsed by the script. Providing this argument skips the user prompt
+when the script first starts.
 - **--file-output** -> Option to specify whether to output the links to pages 
-with broken embeds in a file. The default is output of the links to the 
+with broken embeds in a file. Default behavior is outputting the links to the
 terminal.
 
 ## Installation
